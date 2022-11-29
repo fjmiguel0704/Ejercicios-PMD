@@ -2,10 +2,20 @@ package ejercicios;
 
 import java.util.Scanner;
 
+/**
+ * Clase
+ * @author fernando
+ *
+ */
 public class Ejercicio4 {
-	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
-		int n;
+	
+	/**
+	 * Método main
+	 * @param args
+	 */
+	final public static void main(String[] args) {
+		final Scanner read = new Scanner(System.in);
+		int numero;
 
 		System.out.println("Por favor, introduzca 10 n�meros enteros: ");
 
@@ -13,9 +23,9 @@ public class Ejercicio4 {
 		int positivos = 0;
 
 		for (int i = 0; i < 10; i++) {
-			n = s.nextInt();
+			numero = read.nextInt();
 
-			if (n < 0) {
+			if (numero < 0) {
 				negativos++;
 			} else {
 				positivos++;
@@ -23,6 +33,6 @@ public class Ejercicio4 {
 		}
 
 		System.out.println("Ha introducido " + positivos + " positivos y " + negativos + " negativos");
-		s.close();
+		read.close();
 	}
 }

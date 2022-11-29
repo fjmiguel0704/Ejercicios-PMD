@@ -10,11 +10,14 @@ import java.util.Scanner;
 public class Ejercicio1 {
 	
 	/**
+	 * Variable constante estática
+	 */
+	final static int clave = 8888;
+	
+	/**
 	 * Método Main
 	 * @param args
 	 */
-	
-	final static int clave = 8888;
 	final public static void main(String[] args) {
 
 		final Scanner read = new Scanner(System.in);

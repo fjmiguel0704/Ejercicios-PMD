@@ -2,17 +2,27 @@ package ejercicios;
 
 import java.util.Scanner;
 
+/**
+ * Clase
+ * @author fernando
+ *
+ */
 public class Ejercicio5 {
+	
+	/**
+	 * Método main
+	 * @param args
+	 */
 	public static void main(String[] args) {
 
-		Scanner s = new Scanner(System.in);
+		final Scanner read = new Scanner(System.in);
 		System.out.println("Cálculo de una potencia");
 
 		System.out.print("Introduzca la base: ");
-		int base = s.nextInt();
+		final int base = read.nextInt();
 
 		System.out.print("Introduzca el exponente: ");
-		int exponente = s.nextInt();
+		final int exponente = read.nextInt();
 
 		double potencia = 1;
 
@@ -35,6 +45,6 @@ public class Ejercicio5 {
 		}
 
 		System.out.println(base + "^" + exponente + " = " + potencia);
-		s.close();
+		read.close();
 	}
 }
